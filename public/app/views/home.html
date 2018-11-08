@@ -1,12 +1,15 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <!-- tour-step tour-step-title="Main Menu" tour-step-content="Navigate the site using this menu." tour-step-order="0" tour-step-placement="right" -->
-        <div class="navbar-header">
+        <div class="navbar-header" tour-step="welcomeStep" tour-step-belongs-to="testTour" tour-step-order="0" tour-step-template-url="'/public/app/views/welcomeTemplate.html'"
+            tour-step-placement="bottom" tour-step-backdrop=true tour-step-animation=true>
             <a class="navbar-brand" ui-sref="main.home" ui-sref-active="{'active': 'main.home'}">WebSiteName</a>
         </div>
         <!-- tour-step tour-step-title="Settings" tour-step-content="Click here to change your settings." tour-step-order="1" -->
         <ul class="nav navbar-nav">
-            <li ui-sref-active="{'active': 'main.home'}">
+            <li ui-sref-active="{'active': 'main.home'}" tour-step="welcomeStep1" tour-step-belongs-to="testTour" tour-step-order="1"
+                tour-step-template-url="'/public/app/views/welcomeTemplate.html'" tour-step-placement="bottom" tour-step-backdrop=true
+                tour-step-animation="true" tour-step-on-next="goToPagePage11('go to page 1-1')">
                 <a ui-sref="main.home">Home</a>
             </li>
             <li class="dropdown" ui-sref-active="{'active': 'main.home.page1'}">
@@ -29,7 +32,7 @@
     </div>
 </nav>
 <div class="container">
-    <button class="btn btn-primary">Start Tour</button>
+    <button class="btn btn-primary" ng-click="toggleTour()">Start Tour</button>
     <h1>Let's start the tour</h1>
 </div>
 <div ui-view="appContent"></div>

@@ -12,10 +12,14 @@
           });
 
         // if none of the states are matched, use this as the fallback
-        $urlRouterProvider.otherwise('/main/test');
+        $urlRouterProvider.otherwise('/main/home');
         // html5Mode removes #! from url and make the url pretty(normal)
         $locationProvider.html5Mode(true);
-        TourConfigProvider.enableNavigationInterceptors();
       }
     ])
+    .run(['uiTourService', function (uiTourService) {
+      uiTourService.createDetachedTour('testTour', {
+        backdrop: true
+      });
+    }]);
 })();

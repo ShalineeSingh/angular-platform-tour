@@ -8,7 +8,7 @@
           'views': {
             'mainContent': {
               'templateUrl': '/public/app/views/home.html',
-              // 'controller': 'dashboardCtrl'
+              'controller': 'appController'
             }
           }
         })
@@ -26,7 +26,7 @@
           'views': {
             'pageContent': {
               'templateUrl': '/public/app/views/page1-1.html',
-              // 'controller': 'dashboardCtrl'
+              'controller': 'appController'
             }
           }
         })
@@ -35,7 +35,7 @@
           'views': {
             'pageContent': {
               'templateUrl': '/public/app/views/page1-2.html',
-              // 'controller': 'dashboardCtrl'
+              'controller': 'appController'
             }
           }
         })
@@ -44,7 +44,7 @@
           'views': {
             'appContent': {
               'templateUrl': '/public/app/views/page2.html',
-              // 'controller': 'dashboardCtrl'
+              'controller': 'appController'
             }
           }
         });

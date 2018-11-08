@@ -1,0 +1,33 @@
+<style>
+    .popover-content .tour-step-content {
+        background: lightblue;
+    }
+
+    /*.popover-inner h3 {*/
+
+    /*    background: transparent;*/
+
+    /*    border: none;*/
+
+    /*}*/
+
+    /*.ui-tour-popup {*/
+
+    /*    background-color: transparent;*/
+
+    /*    border: none;*/
+
+    /*}*/
+</style>
+
+<div class="arrow"></div>
+<div class="popover-inner tour-step-inner">
+    <div class="popover-content tour-step-content">hello there</div>
+    <div class="popover-navigation tour-step-navigation">
+        <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-default" ng-if="tourStep.isPrev()" ng-click="tour.prev()">&laquo; Prev</button>
+            <button type="button" class="btn btn-sm btn-default" ng-if="tourStep.isNext()" ng-click="tour.next()">Next &raquo;</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-default" ng-click="tour.end()">End tour</button>
+    </div>
+</div>

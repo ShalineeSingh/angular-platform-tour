@@ -30,10 +30,9 @@
 
 
 
-<body ng-app="tourTest" style="background-color:#FFF">
+<body ng-app="tourTest" style="background-color:#FFF" ui-tour="testTour" ui-tour-on-end="onTourEnd()" ui-tour-append-to-body="true">
     <!-- ui-tour-on-ready="tour.start()" -->
     <div ng-controller="appController" ui-tour ui-tour-placement="bottom">
-        <h1 tour-step tour-step-title="Test" tour-step-position="bottom">{{test}}</h1>
         <div ui-view></div>
     </div>
 
@@ -41,5 +40,11 @@
     <script src="./public/app/routes/routes.js"></script>
     <script src="./public/app/controllers/app.controller.js"></script>
 </body>
+<style>
+    .ui-tour-backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+        fill: rgba(0, 0, 0, 0.5);
+    }
+</style>
 
 </html>
