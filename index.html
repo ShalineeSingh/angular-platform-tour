@@ -16,8 +16,6 @@
     <script src="./bower_components/angular/angular.min.js"></script>
     <script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
-
-    <!-- <script src="bower_components/angular/angular.js"></script> -->
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="./bower_components/cfp-angular-hotkeys/build/hotkeys.min.js"></script>
     <script src="bower_components/angular-hotkeys/build/hotkeys.js"></script>
@@ -26,15 +24,6 @@
     <script src="bower_components/ez-ng/dist/ez-ng.js"></script>
     <script src="bower_components/angular-scroll/angular-scroll.js"></script>
     <script src="bower_components/angular-bind-html-compile/angular-bind-html-compile.js"></script>
-    <!-- <script src="./bower_components/hone/hone.js"></script>
-    <script src="bower_components/tether/dist/js/tether.js"></script>
-    <script src="./bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-    <script src="./bower_components/angular-scroll/angular-scroll.min.js"></script>
-    <script src="./bower_components/ngSmoothScroll/lib/angular-smooth-scroll.js"></script>
-    <script src="./bower_components/ez-ng/dist/ez-ng.js"></script>
-    <script src="./bower_components/cfp-angular-hotkeys/build/hotkeys.min.js"></script>
-    <script src="./bower_components/angular-bind-html-compile/angular-bind-html-compile.min.js"></script> -->
     <script src="bower_components/angular-ui-tour/dist/angular-ui-tour.js"></script>
 
 </head>
@@ -42,7 +31,8 @@
 
 
 <body ng-app="tourTest" style="background-color:#FFF">
-    <div ng-controller="appController" ui-tour ui-tour-on-ready="tour.start()" ui-tour-placement="bottom">
+    <!-- ui-tour-on-ready="tour.start()" -->
+    <div ng-controller="appController" ui-tour ui-tour-placement="bottom">
         <h1 tour-step tour-step-title="Test" tour-step-position="bottom">{{test}}</h1>
         <div ui-view></div>
     </div>
@@ -51,6 +41,5 @@
     <script src="./public/app/routes/routes.js"></script>
     <script src="./public/app/controllers/app.controller.js"></script>
 </body>
-<!-- <script type="text/javascript" src="app.js"></script> -->
 
 </html>
