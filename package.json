@@ -1,0 +1,24 @@
+{
+  "name": "angular-platform-tour",
+  "version": "1.0.0",
+  "description": "dummy project for platform tour",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShalineeSingh/angular-platform-tour.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShalineeSingh/angular-platform-tour/issues"
+  },
+  "homepage": "https://github.com/ShalineeSingh/angular-platform-tour#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hone": "^1.1.0"
+  }
+}

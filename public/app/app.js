@@ -1,0 +1,21 @@
+(function () {
+  'use strict';
+  angular.module('tourTest', ['ui.router', 'bm.uiTour', 'tourTest.app'])
+    .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 'TourConfigProvider',
+      function ($stateProvider, $urlRouterProvider, $locationProvider, TourConfigProvider) {
+        $stateProvider
+          .state('main', {
+            url: '/main',
+            abstract: true,
+            cache: false,
+            template: '<div ui-view="mainContent"></div>',
+          });
+
+        // if none of the states are matched, use this as the fallback
+        $urlRouterProvider.otherwise('/main/test');
+        // html5Mode removes #! from url and make the url pretty(normal)
+        $locationProvider.html5Mode(true);
+        TourConfigProvider.enableNavigationInterceptors();
+      }
+    ])
+})();

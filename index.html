@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--- IE cache fix for logout -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Learn</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+
+    <!-- <script src="bower_components/angular/angular.js"></script> -->
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="./bower_components/cfp-angular-hotkeys/build/hotkeys.min.js"></script>
+    <script src="bower_components/angular-hotkeys/build/hotkeys.js"></script>
+    <script src="bower_components/hone/hone.js"></script>
+    <script src="bower_components/tether/dist/js/tether.js"></script>
+    <script src="bower_components/ez-ng/dist/ez-ng.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+    <script src="bower_components/angular-bind-html-compile/angular-bind-html-compile.js"></script>
+    <!-- <script src="./bower_components/hone/hone.js"></script>
+    <script src="bower_components/tether/dist/js/tether.js"></script>
+    <script src="./bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="./bower_components/angular-scroll/angular-scroll.min.js"></script>
+    <script src="./bower_components/ngSmoothScroll/lib/angular-smooth-scroll.js"></script>
+    <script src="./bower_components/ez-ng/dist/ez-ng.js"></script>
+    <script src="./bower_components/cfp-angular-hotkeys/build/hotkeys.min.js"></script>
+    <script src="./bower_components/angular-bind-html-compile/angular-bind-html-compile.min.js"></script> -->
+    <script src="bower_components/angular-ui-tour/dist/angular-ui-tour.js"></script>
+
+</head>
+
+
+
+<body ng-app="tourTest" style="background-color:#FFF">
+    <div ng-controller="appController" ui-tour ui-tour-on-ready="tour.start()" ui-tour-placement="bottom">
+        <h1 tour-step tour-step-title="Test" tour-step-position="bottom">{{test}}</h1>
+        <div ui-view></div>
+    </div>
+
+    <script src="./public/app/app.js"></script>
+    <script src="./public/app/routes/routes.js"></script>
+    <script src="./public/app/controllers/app.controller.js"></script>
+</body>
+<!-- <script type="text/javascript" src="app.js"></script> -->
+
+</html>
