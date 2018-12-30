@@ -44,7 +44,7 @@
         var url = $sce.trustAsResourceUrl('http://192.168.0.3:7003/login/google');
         console.log(url);
         $scope.login = function () {
-
+          window.location = 'http://192.168.0.3:7003/login/google';
           // loginService.get({
           //     // 'redirect_uri': 'http://localhost:7003/login/google'
           //   })
@@ -54,16 +54,16 @@
           //     console.log(error);
           //   });
 
-          $http({
-            url: url,
-            method: 'GET',
-            data: false,
-            headers: {
-              'Access-Control-Allow-Origin': '*'
-            }
-          }).then(function (data) {
-            console.log(data);
-          });
+          // $http({
+          //   url: url,
+          //   method: 'GET',
+          //   data: false,
+          //   headers: {
+          //     'Access-Control-Allow-Origin': '*'
+          //   }
+          // }).then(function (data) {
+          //   console.log(data);
+          // });
           // var logout = function () {
           //   $.post("/logout", function () {
           //     $("#user").html('');
