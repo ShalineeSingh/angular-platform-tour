@@ -23,6 +23,7 @@
     "angular-scroll": "^1.0.2",
     "angular-bind-html-compile": "^1.4.1",
     "hone": "^1.1.0",
-    "tether": "^1.4.4"
+    "tether": "^1.4.4",
+    "ngSanitize": "^0.0.2"
   }
 }
