@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  angular.module('tourTest', ['ui.router', 'bm.uiTour', 'tourTest.app'])
+  angular.module('tourTest', ['ui.router', 'ngResource', 'bm.uiTour', 'tourTest.app'])
     .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 'TourConfigProvider',
       function ($stateProvider, $urlRouterProvider, $locationProvider, TourConfigProvider) {
         $stateProvider

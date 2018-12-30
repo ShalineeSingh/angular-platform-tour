@@ -16,6 +16,7 @@
     "angular-ui-router": "^1.0.20",
     "angular-bootstrap": "^2.5.0",
     "angular-ui-tour": "^0.9.4",
+    "angular-resource": "^1.7.5",
     "ngSmoothScroll": "^2.0.0",
     "ez-ng": "^0.1.9",
     "angular-hotkeys": "chieffancypants/angular-hotkeys#^1.7.0",
